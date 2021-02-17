@@ -1,15 +1,25 @@
 import React from "react"
 import { useStaticQuery } from "gatsby"
-import Hero from "./style"
+import Img from "gatsby-image"
+import styled from "styled-components"
+import tw from "twin.macro"
 
 import PageTitle from "~components/PageTitle"
-import SubTitle from "~components/SubTitle"
-import Img from "~components/Img"
-import VSpacer from "~components/VSpacer"
+import SectionSubTitle from "~components/SectionSubTitle"
 
 import hero_desk from "~images/hero_desk.svg"
 
-export default function index() {
+const StyledDiv = styled.div`
+  height: 700px;
+  background-size: 40%;
+  background-image: ${props => {
+    return props.background ? `url(${props.background})` : "none"
+  }};
+
+  ${tw`min-h-vh lg:p-40 flex flex-col items-center bg-bottom bg-no-repeat`};
+`
+
+const HomeHero = function index() {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "shehan.jpg" }) {
@@ -23,11 +33,19 @@ export default function index() {
   `)
 
   return (
-    <Hero background={hero_desk}>
-      <PageTitle>Frontend Developer & Lifelong Learner</PageTitle>
-      <SubTitle>I code simple yet beautiful things and love what I do</SubTitle>
-      <VSpacer />
-      <Img fixed={data.file.childImageSharp.fixed} bRadius="100%" />
-    </Hero>
+    <StyledDiv background={hero_desk}>
+      <PageTitle className="text-center">
+        Frontend Developer & Lifelong Learner
+      </PageTitle>
+      <SectionSubTitle className="font-light">
+        I code simple yet beautiful things and love what I do
+      </SectionSubTitle>
+      <Img
+        className="rounded-full mt-8"
+        fixed={data.file.childImageSharp.fixed}
+      />
+    </StyledDiv>
   )
 }
+
+export default HomeHero

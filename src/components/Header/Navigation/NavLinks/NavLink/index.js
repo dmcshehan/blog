@@ -1,12 +1,18 @@
 import React from "react"
+import styled from "styled-components"
+import tw from "twin.macro"
 import { Link } from "gatsby"
 
-import NavLink from "./style.js"
+const StyledNavLink = styled.li`
+  ${tw`font-body`}
+`
 
-export default function ({ to, children }) {
+const NavLink = function ({ to, children }) {
   return (
-    <NavLink>
+    <StyledNavLink>
       <Link to={to}>{children}</Link>
-    </NavLink>
+    </StyledNavLink>
   )
 }
+
+export default NavLink

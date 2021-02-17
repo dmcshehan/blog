@@ -1,13 +1,21 @@
 import React from "react"
-import Navigation from "./styles.js"
+import styled from "styled-components"
+import tw from "twin.macro"
+
+const StyledNav = styled.nav`
+  ${tw`flex justify-between items-center`}
+`
+
 import Logo from "./Logo/"
 import Navlinks from "./NavLinks/"
 
-export default function () {
+const Navigation = function ({ props }) {
   return (
-    <Navigation>
+    <StyledNav {...props}>
       <Logo />
       <Navlinks />
-    </Navigation>
+    </StyledNav>
   )
 }
+
+export default Navigation

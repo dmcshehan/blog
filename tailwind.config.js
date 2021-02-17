@@ -10,7 +10,10 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#2563EB",
+          DEFAULT: "#f3ca20",
+        },
+        secondary: {
+          DEFAULT: "#000000",
         },
       },
       minHeight: {

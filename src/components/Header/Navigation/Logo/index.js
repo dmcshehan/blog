@@ -1,8 +1,15 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Logo from "./styles.js"
-import logo_color from "./logo_color.svg"
+import styled from "styled-components"
+import tw from "twin.macro"
 
-export default function () {
-  return <Logo src={logo_color} />
+const StyledLogo = styled.img`
+  ${tw`w-12`}
+`
+
+import logo_color from "~images/logo_color.svg"
+
+const Logo = function () {
+  return <StyledLogo src={logo_color} alt="logo" />
 }
+
+export default Logo

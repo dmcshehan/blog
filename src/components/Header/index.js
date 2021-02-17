@@ -1,14 +1,22 @@
 import React from "react"
-import Header from "./style"
+import styled from "styled-components"
+import tw from "twin.macro"
+
 import Container from "~components/Container"
 import Navigation from "./Navigation"
 
-export default function index() {
+const StyledHeader = styled.header`
+  ${tw`w-full h-16 flex items-center`}
+`
+
+const Header = function () {
   return (
-    <Header>
+    <StyledHeader>
       <Container>
         <Navigation></Navigation>
       </Container>
-    </Header>
+    </StyledHeader>
   )
 }
+
+export default Header

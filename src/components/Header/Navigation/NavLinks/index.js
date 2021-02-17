@@ -1,14 +1,22 @@
 import React from "react"
-import { NavLinks } from "./style.js"
+import styled from "styled-components"
+import tw from "twin.macro"
+
+export const StyledNavLinks = styled.ul`
+  ${tw`list-none flex space-x-4`}
+`
+
 import NavLink from "./NavLink"
 
-export default function ({ children }) {
+const NavLinks = function () {
   return (
-    <NavLinks>
+    <StyledNavLinks>
       <NavLink to="/home">Home</NavLink>
       <NavLink to="/about">About</NavLink>
       <NavLink to="/blog">Blog</NavLink>
       <NavLink to="/contact">Contact</NavLink>
-    </NavLinks>
+    </StyledNavLinks>
   )
 }
+
+export default NavLinks
