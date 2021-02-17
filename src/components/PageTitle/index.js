@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import PageTitle from "./style.js"
+import StyledH1 from "./style.js"
 
-const pageTitle = function ({ children }) {
-  return <PageTitle>{children}</PageTitle>
+export const PageTitle = function ({ children }) {
+  return <StyledH1>{children}</StyledH1>
 }
 
-pageTitle.propTypes = {
+PageTitle.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default pageTitle
+export default PageTitle

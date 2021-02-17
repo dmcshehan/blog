@@ -10,6 +10,12 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [require("tailwindcss")("./tailwind.config.js")],
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
@@ -31,8 +37,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Open Sans\:300,300i,400,400i,600,600i,700,700i,800,800i`,
-          `work sans\:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i`, // you can also specify font weights and styles
+          `Titillium Web\:200,200i,300,300i,400,400i,600,600i,700,700i,900`,
+          `Poppins\:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i`,
+          `Ruda\:400,500,600,700,800`,
         ],
         display: "swap",
       },
