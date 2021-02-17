@@ -1,5 +1,5 @@
 ---
-# category: "blog"
+category: "blog"
 title: "Test Blog Post"
 tags: ["css"]
 date: "2021-02-04"

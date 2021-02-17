@@ -29,7 +29,7 @@ export default function Skills() {
             <IconWrapper>
               <Icon src={developer} alt="developer" />
             </IconWrapper>
-            <SectionSubTitle className="mt-4 font-bold">
+            <SectionSubTitle className="mt-4 font-bold text-center">
               Frontend Developer
             </SectionSubTitle>
             <Paragraph className="text-center mt-4">
@@ -74,7 +74,7 @@ export default function Skills() {
             <IconWrapper>
               <Icon src={designer} alt="designer" />
             </IconWrapper>
-            <SectionSubTitle className="mt-4 font-bold">
+            <SectionSubTitle className="mt-4 font-bold text-center">
               Designer (Intermediate)
             </SectionSubTitle>
             <Paragraph className="text-center mt-4">
