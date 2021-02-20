@@ -45,8 +45,8 @@ export default function index() {
         Here are a few design projects I've worked on recently.
       </SectionSubTitle>
       <div className="grid grid-cols-2 gap-4 my-8">
-        {allMarkdownRemark.edges.map(edge => (
-          <ProjectCard key={edge.id} {...edge.node.frontmatter} />
+        {allMarkdownRemark.edges.map(({ node }) => (
+          <ProjectCard key={node.id} {...node.frontmatter} />
         ))}
       </div>
       <Button className="mx-auto mt-8 block" to="/about">
