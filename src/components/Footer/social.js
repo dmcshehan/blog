@@ -1,30 +1,14 @@
-import {
-  faFacebookF,
-  faLinkedinIn,
-  faInstagramSquare,
-  faAngellist,
-  faStackOverflow,
-} from "@fortawesome/free-brands-svg-icons/"
-
 export default [
   {
-    platform: "linkedin",
-    icon: faLinkedinIn,
+    platform: "Github",
+    link: "https://github.com/dmcshehan",
   },
   {
-    platform: "instagram",
-    icon: faInstagramSquare,
+    platform: "Twitter",
+    link: "https://twitter.com/dmcshehan",
   },
   {
-    platform: "facebbok",
-    icon: faFacebookF,
-  },
-  {
-    platform: "angellist",
-    icon: faAngellist,
-  },
-  {
-    platform: "stackoverflow",
-    icon: faStackOverflow,
+    platform: "Linkedin",
+    link: "https://www.linkedin.com/in/dmcshehan/",
   },
 ]

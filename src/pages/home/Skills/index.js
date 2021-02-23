@@ -2,10 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-import Container from "~components/Container"
+import SectionTitle from "~components/SectionTitle"
 import SectionSubTitle from "~components/SectionSubTitle"
-import SmallTitle from "~components/SmallTitle"
 import Paragraph from "~components/Paragraph"
+import Section from "~components/Section"
+import List from "~components/List"
 
 import developer from "~images/developer.svg"
 import designer from "~images/designer.svg"
@@ -14,91 +15,75 @@ const Icon = styled.img`
   ${tw`h-16 mx-auto block`}
 `
 const IconWrapper = styled.div`
-  ${tw`bg-primary w-max mx-auto p-4`}
+  ${tw`w-16 mb-8`}
 `
-const CrossOver = styled.div`
-  ${tw`-mt-16`}
+const Title = styled(SectionSubTitle)`
+  ${tw`mt-4 mb-4 font-bold`}
+`
+const BoxContainer = styled.div`
+  ${tw`grid grid-cols-2 gap-4 mt-8`}
+`
+const Box = styled.div`
+  ${tw`border p-4`}
+`
+
+const ListContainer = styled.div`
+  ${tw`grid grid-cols-3 gap-4 text-lg font-light`}
 `
 
 export default function Skills() {
   return (
-    <CrossOver>
-      <Container className="bg-white border">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="border-r p-8">
-            <IconWrapper>
-              <Icon src={developer} alt="developer" />
-            </IconWrapper>
-            <SectionSubTitle className="mt-4 font-bold text-center">
-              Frontend Developer
-            </SectionSubTitle>
-            <Paragraph className="text-center mt-4">
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
-            </Paragraph>
-            <SmallTitle className="text-center my-4">
-              Languages I speak
-            </SmallTitle>
-            <Paragraph className="text-center">
-              HTML5, CSS3, SCSS, JavaScript, MongoDB
-            </Paragraph>
-            <SmallTitle className="text-center my-4">Dev Tools</SmallTitle>
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div>
-                <ul>
-                  <li>React, Redux </li>
-                  <li>jQuery</li>
-                  <li>Express</li>
-                  <li>Mongoose</li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>JWT</li>
-                  <li>Google Firebase</li>
-                  <li>Heroku / Netlify</li>
-                  <li>Bulma</li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>Ant Design</li>
-                  <li>Gatsby</li>
-                  <li>Git / Github</li>
-                  <li>VS Code</li>
-                </ul>
-              </div>
+    <Section>
+      <SectionTitle>What I Do</SectionTitle>
+      <SectionSubTitle className="font-light">
+        The technologies that I use most often
+      </SectionSubTitle>
+      <BoxContainer>
+        <Box>
+          <IconWrapper>
+            <Icon src={developer} alt="developer" />
+          </IconWrapper>
+          <Title>Frontend Developer</Title>
+          <Paragraph>
+            I like to code things from scratch, and enjoy bringing ideas to life
+            in the browser.
+          </Paragraph>
+          <Title>Languages I speak</Title>
+          <Paragraph>HTML5, CSS3, SCSS, JavaScript, MongoDB</Paragraph>
+          <Title>Dev Tools</Title>
+          <ListContainer>
+            <div>
+              <List list={["React, Redux", "jQuery", "Express", "Mongoose"]} />
             </div>
-          </div>
-          <div className="p-8">
-            <IconWrapper>
-              <Icon src={designer} alt="designer" />
-            </IconWrapper>
-            <SectionSubTitle className="mt-4 font-bold text-center">
-              Designer (Intermediate)
-            </SectionSubTitle>
-            <Paragraph className="text-center mt-4">
-              I value simple content structure, clean design patterns, and
-              thoughtful interactions.
-            </Paragraph>
-            <SmallTitle className="text-center my-4">
-              Things I enjoy designing
-            </SmallTitle>
-            <Paragraph className="text-center">
-              Websites, Web Applications
-            </Paragraph>
-            <SmallTitle className="text-center my-4">Design Tools</SmallTitle>
-            <div className="text-center">
-              <ul>
-                <li>Pen & Paper</li>
-                <li>Figma</li>
-                <li>Photoshop</li>
-                <li>Adobe XD</li>
-              </ul>
+            <div>
+              <List
+                list={["JWT", "Google Firebase", "Heroku / Netlify", "Bulma"]}
+              />
             </div>
-          </div>
-        </div>
-      </Container>
-    </CrossOver>
+            <div>
+              <List
+                list={["Ant Design", "Gatsby", "Git / Github", "VS Code"]}
+              />
+            </div>
+          </ListContainer>
+        </Box>
+        <Box>
+          <IconWrapper>
+            <Icon src={designer} alt="designer" />
+          </IconWrapper>
+          <Title>Designer (Intermediate)</Title>
+          <Paragraph>
+            I value simple content structure, clean design patterns, and
+            thoughtful interactions.
+          </Paragraph>
+          <Title>Things I enjoy designing</Title>
+          <Paragraph>Websites, Web Applications</Paragraph>
+          <Title>Design Tools</Title>
+          <ListContainer>
+            <List list={["Pen & Paper", "Figma", "Photoshop", "Adobe XD"]} />
+          </ListContainer>
+        </Box>
+      </BoxContainer>
+    </Section>
   )
 }

@@ -27,7 +27,7 @@ const Testimonials = function () {
               website
               thumbnail {
                 childImageSharp {
-                  fluid(maxWidth: 100) {
+                  fluid(maxWidth: 150) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -44,14 +44,15 @@ const Testimonials = function () {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
+    centerPadding: "50px",
     slidesToScroll: 1,
   }
 
   return (
     <Section>
-      <SectionTitle className="text-center">Testimonials</SectionTitle>
-      <SectionSubTitle className="text-center">
+      <SectionTitle>Testimonials</SectionTitle>
+      <SectionSubTitle>
         People I've worked with have said some nice things
       </SectionSubTitle>
       <Slider {...settings} className="mt-16">

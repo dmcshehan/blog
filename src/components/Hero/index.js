@@ -4,16 +4,14 @@ import tw from "twin.macro"
 
 import Container from "~components/Container"
 
-const StyledSection = styled.div`
-  ${tw`lg:pt-24 lg:pb-24`}
+const StyledDiv = styled.div`
+  ${tw`pt-16 pb-16 bg-gray-50`}
 `
 
-const Section = function ({ children, ...props }) {
+export default function Hero({ children }) {
   return (
-    <StyledSection {...props}>
+    <StyledDiv>
       <Container>{children}</Container>
-    </StyledSection>
+    </StyledDiv>
   )
 }
-
-export default Section

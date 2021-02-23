@@ -4,13 +4,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      body: ["Titillium Web", "sans-serif"],
-      title: ["Ruda", "sans-serif"],
+      secondary: ["Titillium Web", "sans-serif"],
+      primary: ["Ruda", "sans-serif"],
     },
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#FBBF24",
+          DEFAULT: "#0086ff",
         },
         secondary: {
           DEFAULT: "#000000",

@@ -4,11 +4,11 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 const StyledButton = styled.button`
-  ${tw`py-2 px-4 rounded font-body border border-secondary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}
+  ${tw`py-2 px-4 rounded font-primary border border-secondary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}
 `
 
 const StyledLink = styled(Link)`
-  ${tw`py-2 px-4 rounded font-body border border-secondary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}
+  ${tw`py-2 px-4 rounded font-primary border border-secondary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}
 `
 const StyledA = styled.a`
   ${tw`py-2 px-4 inline-block rounded border border-secondary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}

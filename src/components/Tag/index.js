@@ -4,7 +4,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 const StyledSpan = styled.span`
-  ${tw`border border-secondary rounded-sm font-body`}
+  ${tw`border border-secondary rounded font-primary`}
 `
 
 export const Tag = function ({ children, ...props }) {

@@ -4,14 +4,14 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 const StyledButton = styled.button`
-  ${tw`py-2 px-4 rounded font-body bg-primary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}
+  ${tw`py-2 px-4 text-white rounded font-primary bg-primary transition duration-300 ease-in-out max-w-max`}
 `
 
 const StyledLink = styled(Link)`
-  ${tw`py-2 px-4 rounded font-body bg-primary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}
+  ${tw`py-2 px-4 text-white rounded font-primary bg-primary transition duration-300 ease-in-out max-w-max`}
 `
 const StyledA = styled.a`
-  ${tw`py-2 px-4 inline-block rounded font-body bg-primary transition duration-300 ease-in-out max-w-max hover:bg-secondary hover:text-white`}
+  ${tw`py-2 px-4 text-white inline-block rounded font-primary bg-primary transition duration-300 ease-in-out max-w-max`}
 `
 
 const Section = function ({ children, ...props }) {
