@@ -1,6 +1,12 @@
 import React from "react"
-import Layout from "~components/Layout"
+import { Layout, Hero, PageTitle } from "~components"
 
 export default function () {
-  return <Layout>Blog</Layout>
+  return (
+    <Layout>
+      <Hero>
+        <PageTitle>Blog</PageTitle>
+      </Hero>
+    </Layout>
+  )
 }

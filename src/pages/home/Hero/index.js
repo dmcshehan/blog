@@ -4,10 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-import PageTitle from "~components/PageTitle"
-import Section from "~components/Section"
-import Button from "~components/Button"
-import ExternalLink from "~components/ExternalLink"
+import { PageTitle, Section, ExternalLink, Button } from "~components"
 
 const ExtLink = styled(ExternalLink)`
   ${tw`border-primary hover:border-b-2`};

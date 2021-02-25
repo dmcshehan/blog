@@ -3,10 +3,12 @@ import styled from "styled-components"
 import tw from "twin.macro"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Section from "~components/Section"
-import SectionTitle from "~components/SectionTitle"
-import SectionSubTitle from "~components/SectionSubTitle"
-import EducationCard from "~components/EducationCard"
+import {
+  Section,
+  SectionTitle,
+  SectionSubTitle,
+  EducationCard,
+} from "~components"
 
 const Wrapper = styled.div`
   ${tw`mt-16`}

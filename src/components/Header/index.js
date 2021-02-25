@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-import Container from "~components/Container"
+import { Container } from "~components"
 import Navigation from "./Navigation"
 
 const StyledHeader = styled.header`

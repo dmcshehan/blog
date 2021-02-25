@@ -2,11 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-import SectionTitle from "~components/SectionTitle"
-import SectionSubTitle from "~components/SectionSubTitle"
-import Paragraph from "~components/Paragraph"
-import Section from "~components/Section"
-import List from "~components/List"
+import {
+  SectionTitle,
+  SectionSubTitle,
+  Paragraph,
+  Section,
+  List,
+} from "~components"
 
 import developer from "~images/developer.svg"
 import designer from "~images/designer.svg"

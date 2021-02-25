@@ -17,7 +17,7 @@ import Tag from "./Tag/"
 import TestimonialCard from "./TestimonialCard/"
 import List from "./List/"
 import ExperienceCard from "./ExperienceCard/"
-
+import EducationCard from "./EducationCard/"
 export {
   Button,
   Container,
@@ -38,4 +38,5 @@ export {
   TestimonialCard,
   List,
   ExperienceCard,
+  EducationCard,
 }

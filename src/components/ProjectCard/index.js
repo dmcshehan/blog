@@ -8,8 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 
-import Tag from "~components/Tag"
-import ExternalLink from "~components/ExternalLink"
+import { Tag, ExternalLink } from "~components"
 
 const StyledDiv = styled.div`
   ${tw`border`}

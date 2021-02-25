@@ -1,14 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
-import SectionTitle from "~components/SectionTitle"
-import SectionSubTitle from "~components/SectionSubTitle"
-import Paragraph from "~components/Paragraph"
-import Section from "~components/Section"
-import TestimonialCard from "~components/TestimonialCard"
-
 import Slider from "react-slick"
+
+import {
+  SectionTitle,
+  SectionSubTitle,
+  Section,
+  TestimonialCard,
+} from "~components"
 
 const Testimonials = function () {
   const { allMarkdownRemark } = useStaticQuery(graphql`

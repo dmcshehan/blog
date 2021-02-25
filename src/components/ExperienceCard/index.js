@@ -3,9 +3,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 import Img from "gatsby-image"
 
-import SectionSubTitle from "~components/SectionSubTitle"
-import Paragrap from "~components/Paragraph"
-import ExternalLink from "~components/ExternalLink"
+import { SectionSubTitle, Paragraph, ExternalLink } from "~components"
 
 const Position = styled(SectionSubTitle)`
   ${tw`font-bold`}
@@ -14,7 +12,7 @@ const Position = styled(SectionSubTitle)`
 const Duration = styled.p`
   ${tw`font-light text-lg italic`}
 `
-const Description = styled(Paragrap)`
+const Description = styled(Paragraph)`
   ${tw`mt-2`}
 `
 

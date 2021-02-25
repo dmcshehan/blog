@@ -1,7 +1,6 @@
 import React from "react"
 
-import Container from "~components/Container"
-import ExternalLink from "~components/ExternalLink"
+import { Container, ExternalLink } from "~components"
 
 import social from "./social"
 

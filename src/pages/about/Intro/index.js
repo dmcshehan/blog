@@ -2,9 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Section from "~components/Section"
-
-import Paragraph from "~components/Paragraph"
+import { Section, Paragraph } from "~components"
 
 export default function Intro() {
   const data = useStaticQuery(graphql`

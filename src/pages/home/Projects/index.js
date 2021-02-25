@@ -1,11 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Section from "~components/Section"
-import SectionTitle from "~components/SectionTitle"
-import SectionSubTitle from "~components/SectionSubTitle"
-import ProjectCard from "~components/ProjectCard"
-import Button from "~components/Button"
+import {
+  Section,
+  SectionTitle,
+  SectionSubTitle,
+  ProjectCard,
+  Button,
+} from "~components"
 
 export default function index() {
   const { allMarkdownRemark } = useStaticQuery(graphql`

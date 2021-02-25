@@ -4,10 +4,12 @@ import tw from "twin.macro"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import Section from "~components/Section"
-import SectionTitle from "~components/SectionTitle"
-import SectionSubTitle from "~components/SectionSubTitle"
-import ExperienceCard from "~components/ExperienceCard"
+import {
+  Section,
+  SectionTitle,
+  SectionSubTitle,
+  ExperienceCard,
+} from "~components"
 
 const Wrapper = styled.div`
   ${tw`mt-16`}
