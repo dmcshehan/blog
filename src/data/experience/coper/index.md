@@ -1,4 +1,5 @@
 ---
+num: 1
 category: "experience"
 position: "Front End Developer / Graphic Designer (Remote)"
 start: "July 2017"

@@ -9,8 +9,8 @@ const Footer = function () {
   return (
     <div className="pb-8 pt-8 border-t">
       <Container>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="col-span-2">
+        <div className="grid grid-cols-3 gap-4">
+          <div className="col-span-2">
             <p>
               dmcshehan.com &copy; {new Date().getFullYear()}. Powered with{" "}
               <ExternalLink
@@ -30,7 +30,7 @@ const Footer = function () {
               </ExternalLink>
             </p>
           </div>
-          <div class="col-span-1">
+          <div className="col-span-1">
             <div className="space-x-2 flex justify-end">
               {social.map(({ platform, link }) => (
                 <ExternalLink key={platform} href={link}>

@@ -2,12 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-const StyledP = styled.p`
-  ${tw`text-lg font-light mb-2 leading-7`}
+const P = styled.p`
+  ${tw`text-xl font-light`};
 `
 
 const Paragraph = function ({ children, ...props }) {
-  return <StyledP {...props}>{children}</StyledP>
+  return <P {...props}>{children}</P>
 }
 
-export default Paragraph
+export default P

@@ -3,22 +3,21 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import Section from "~components/Section"
 import SectionTitle from "~components/SectionTitle"
 import SectionSubTitle from "~components/SectionSubTitle"
-import Paragraph from "~components/Paragraph"
 import ExperienceCard from "~components/ExperienceCard"
 
 const Wrapper = styled.div`
   ${tw`mt-16`}
 `
 
-export default function Intro() {
+const Experience = function () {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
+        sort: { fields: [frontmatter___num], order: ASC }
         filter: { frontmatter: { category: { eq: "experience" } } }
       ) {
         edges {
@@ -26,6 +25,7 @@ export default function Intro() {
             id
             frontmatter {
               company
+              website
               start
               end
               position
@@ -57,3 +57,5 @@ export default function Intro() {
     </Section>
   )
 }
+
+export default Experience
