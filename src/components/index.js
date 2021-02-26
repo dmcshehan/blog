@@ -18,6 +18,8 @@ import TestimonialCard from "./TestimonialCard/"
 import List from "./List/"
 import ExperienceCard from "./ExperienceCard/"
 import EducationCard from "./EducationCard/"
+import BlogCard from "./BlogCard/"
+
 export {
   Button,
   Container,
@@ -39,4 +41,5 @@ export {
   List,
   ExperienceCard,
   EducationCard,
+  BlogCard,
 }

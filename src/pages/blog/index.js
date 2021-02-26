@@ -1,12 +1,14 @@
 import React from "react"
-import { Layout, Hero, PageTitle } from "~components"
+import { Layout, PageTitle } from "~components"
+
+import Hero from "./Hero/"
+import BlogPosts from "./BlogPosts/"
 
 export default function () {
   return (
     <Layout>
-      <Hero>
-        <PageTitle>Blog</PageTitle>
-      </Hero>
+      <Hero />
+      <BlogPosts />
     </Layout>
   )
 }

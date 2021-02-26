@@ -1,8 +1,9 @@
 ---
-# category: "blog"
+category: "blog"
 title: "Test Blog Post 2"
 tags: ["css"]
 date: "2021-02-03"
+excerpt: "In this tutorial I will show you how to use Tailwind css with your gatsby site"
 cover: "./cover.jpg"
 ---
 

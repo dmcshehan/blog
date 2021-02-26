@@ -21,9 +21,7 @@ const ProjectCard = function ({ cover, description, tags, demo, github }) {
       <div className="p-4">
         <p className="mb-4">{description}</p>
         {tags.map((tag, index) => (
-          <Tag key={index} className="mr-2 px-2">
-            {tag}
-          </Tag>
+          <Tag key={index}>{tag}</Tag>
         ))}
 
         <div className="mt-4 pt-2 border-t text-xl">
