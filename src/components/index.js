@@ -19,6 +19,8 @@ import List from "./List/"
 import ExperienceCard from "./ExperienceCard/"
 import EducationCard from "./EducationCard/"
 import BlogCard from "./BlogCard/"
+import BlogHero from "./BlogHero/"
+import Date from "./Date"
 
 export {
   Button,
@@ -42,4 +44,6 @@ export {
   ExperienceCard,
   EducationCard,
   BlogCard,
+  BlogHero,
+  Date,
 }
