@@ -3,7 +3,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 export const StyledDiv = styled.div`
-  ${tw`lg:w-3/6 lg:max-w-4xl mx-auto`}
+  ${tw`lg:w-3/6 lg:max-w-4xl md:w-4/5 sm:w-11/12 mx-auto`}
 `
 
 const Container = function ({ children, ...props }) {
