@@ -31,7 +31,6 @@ const HomeHero = function index() {
     <Section className="bg-gray-50">
       <div class="grid grid-cols-2 gap-4">
         <div>
-          {" "}
           <PageTitle>Hi, I’m Shehan 👋🏼</PageTitle>
           <P className="mb-4 text-xl">
             I'm a Front end developer from Colombo, Sri Lanka 🏝️. I code, write
