@@ -8,10 +8,13 @@ const Footer = function () {
   return (
     <div className="pb-8 pt-8 border-t">
       <Container>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="col-span-2">
+        <div className="grid grid-cols-3 gap-4 text-center md:text-left">
+          <div className="col-span-3 lg:col-span-2">
             <p>
-              dmcshehan.com &copy; {new Date().getFullYear()}. Powered with{" "}
+              <span className="block md:inline">
+                dmcshehan.com &copy; {new Date().getFullYear()}.
+              </span>{" "}
+              Powered with{" "}
               <ExternalLink
                 secondary
                 href="https://www.gatsbyjs.com/"
@@ -29,8 +32,8 @@ const Footer = function () {
               </ExternalLink>
             </p>
           </div>
-          <div className="col-span-1">
-            <div className="space-x-2 flex justify-end">
+          <div className="col-span-3 lg:col-span-1">
+            <div className="space-x-2 flex justify-center lg:justify-end">
               {social.map(({ platform, link }) => (
                 <ExternalLink key={platform} href={link}>
                   {platform}

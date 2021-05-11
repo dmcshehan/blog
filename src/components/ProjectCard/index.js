@@ -19,12 +19,14 @@ const ProjectCard = function ({ cover, description, tags, demo, github }) {
     <StyledDiv>
       <Img className="w-full" fluid={cover.childImageSharp.fluid}></Img>
       <div className="p-4">
-        <p className="mb-4">{description}</p>
-        {tags.map((tag, index) => (
-          <Tag key={index}>{tag}</Tag>
-        ))}
+        <p className="mb-4 text-center md:text-left">{description}</p>
+        <div className="flex justify-center md:justify-start">
+          {tags.map((tag, index) => (
+            <Tag key={index}>{tag}</Tag>
+          ))}
+        </div>
 
-        <div className="mt-4 pt-2 border-t text-xl">
+        <div className="mt-4 pt-2 border-t text-xl flex justify-center md:justify-start">
           <ExternalLink href={demo} className="mr-4">
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </ExternalLink>

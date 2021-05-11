@@ -46,6 +46,14 @@ const Testimonials = function () {
     slidesToShow: 2,
     centerPadding: "50px",
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   }
 
   return (

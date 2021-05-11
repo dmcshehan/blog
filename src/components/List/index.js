@@ -1,8 +1,8 @@
 import React from "react"
 
-export default function index({ list }) {
+export default function index({ list, ...props }) {
   return (
-    <ul>
+    <ul {...props}>
       {list.map((item, index) => (
         <li key={index}>{item}</li>
       ))}

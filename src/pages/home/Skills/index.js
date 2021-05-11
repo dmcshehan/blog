@@ -14,23 +14,22 @@ import developer from "~images/developer.svg"
 import designer from "~images/designer.svg"
 
 const Icon = styled.img`
-  ${tw`h-16 mx-auto block`}
+  ${tw`h-16 w-16 block`}
 `
 const IconWrapper = styled.div`
-  ${tw`w-16 mb-8`}
+  ${tw`mb-8 flex justify-center md:justify-start`}
 `
 const Title = styled(SectionSubTitle)`
   ${tw`mt-4 mb-4 font-bold`}
 `
 const BoxContainer = styled.div`
-  ${tw`grid grid-cols-2 gap-4 mt-8`}
+  ${tw`grid lg:grid-cols-2 gap-4 mt-8`}
 `
 const Box = styled.div`
   ${tw`border p-4`}
 `
-
 const ListContainer = styled.div`
-  ${tw`grid grid-cols-3 gap-4 text-lg font-light`}
+  ${tw`grid gap-4 text-lg font-light`}
 `
 
 export default function Skills() {
@@ -46,14 +45,16 @@ export default function Skills() {
             <Icon src={developer} alt="developer" />
           </IconWrapper>
           <Title>Frontend Developer</Title>
-          <Paragraph>
+          <Paragraph className="text-center md:text-left">
             I like to code things from scratch, and enjoy bringing ideas to life
             in the browser.
           </Paragraph>
           <Title>Languages I speak</Title>
-          <Paragraph>HTML5, CSS3, SCSS, JavaScript, MongoDB</Paragraph>
+          <Paragraph className="text-center md:text-left">
+            HTML5, CSS3, SCSS, JavaScript, MongoDB
+          </Paragraph>
           <Title>Dev Tools</Title>
-          <ListContainer>
+          <ListContainer className="grid-cols-2 md:grid-cols-3">
             <div>
               <List list={["React, Redux", "jQuery", "Express", "Mongoose"]} />
             </div>
@@ -74,15 +75,20 @@ export default function Skills() {
             <Icon src={designer} alt="designer" />
           </IconWrapper>
           <Title>Designer (Intermediate)</Title>
-          <Paragraph>
+          <Paragraph className="text-center md:text-left">
             I value simple content structure, clean design patterns, and
             thoughtful interactions.
           </Paragraph>
           <Title>Things I enjoy designing</Title>
-          <Paragraph>Websites, Web Applications</Paragraph>
+          <Paragraph className="text-center md:text-left">
+            Websites, Web Applications
+          </Paragraph>
           <Title>Design Tools</Title>
           <ListContainer>
-            <List list={["Pen & Paper", "Figma", "Photoshop", "Adobe XD"]} />
+            <List
+              list={["Pen & Paper", "Figma", "Photoshop", "Adobe XD"]}
+              className="text-center md:text-left"
+            />
           </ListContainer>
         </Box>
       </BoxContainer>

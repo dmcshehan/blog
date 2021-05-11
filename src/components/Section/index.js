@@ -5,7 +5,7 @@ import tw from "twin.macro"
 import { Container } from "~components"
 
 const StyledSection = styled.div`
-  ${tw`lg:pt-24 lg:pb-24`}
+  ${tw`py-16 lg:py-24 `}
 `
 
 const Section = function ({ children, ...props }) {

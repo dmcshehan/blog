@@ -41,20 +41,20 @@ export default function index() {
   return (
     <Section className="bg-gray-100">
       <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-2">
+        <div className="col-span-3 md:col-span-2">
           <SectionTitle>My Recent Personal Projects</SectionTitle>
           <SectionSubTitle className="font-light">
             Here are a few design projects I've worked on recently.
           </SectionSubTitle>
         </div>
-        <div className="col-span-1 flex items-center justify-end">
+        <div className="col-span-3 md:col-span-1 flex items-center justify-center md:justify-end">
           <Button className="block" to="/about">
             View More Projects
           </Button>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 my-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
         {allMarkdownRemark.edges.map(({ node }) => (
           <ProjectCard key={node.id} {...node.frontmatter} />
         ))}
