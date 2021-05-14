@@ -4,11 +4,9 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import LineIcon from "react-lineicons"
 
-import { Tag, Tags, ExternalLink, SmallTitle } from "~components"
+import { Tags, ExternalLink, SmallTitle } from "~components"
 
 const StyledDiv = styled.div`
   ${tw`border`}
@@ -34,10 +32,10 @@ const ProjectCard = function ({
 
         <div className="mt-4 pt-2 border-t text-xl">
           <ExternalLink href={demo} className="mr-4">
-            <FontAwesomeIcon icon={faExternalLinkAlt} />
+            <LineIcon name="search" />
           </ExternalLink>
           <ExternalLink href={github} secondary>
-            <FontAwesomeIcon icon={faGithub} />
+            <LineIcon name="github-original" />
           </ExternalLink>
         </div>
       </div>

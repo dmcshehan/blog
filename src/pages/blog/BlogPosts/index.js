@@ -36,7 +36,7 @@ export default function index() {
 
   return (
     <Section>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {allMarkdownRemark.edges.map(({ node }) => {
           console.log(node)
           return (
@@ -47,7 +47,8 @@ export default function index() {
             />
           )
         })}
-      </div>
+      </div> */}
+      Coming Soon!
     </Section>
   )
 }

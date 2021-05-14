@@ -26,6 +26,7 @@ import ExternalNavLink from "./ExternalNavLink"
 import ReadTime from "./ReadTime"
 import TagWrapper from "./Tags/TagWrapper"
 import Tags from "./Tags"
+import Seo from "./Seo"
 
 export {
   Button,
@@ -56,4 +57,5 @@ export {
   ReadTime,
   TagWrapper,
   Tags,
+  Seo,
 }

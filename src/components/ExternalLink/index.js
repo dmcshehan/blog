@@ -3,7 +3,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 const Link = styled.a`
-  ${tw`text-primary font-semibold`}
+  ${tw`text-primary`}
 `
 
 const Section = function ({ children, secondary, ...props }) {

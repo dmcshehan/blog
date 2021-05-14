@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout } from "~components"
+import { Layout, Seo } from "~components"
 
 import Hero from "./Hero"
 import Skills from "./Skills"
@@ -9,6 +9,7 @@ import Testimonials from "./Testimonials"
 export default function () {
   return (
     <Layout>
+      <Seo title="Home" />
       <Hero />
       <Skills />
       <Projects />
