@@ -8,22 +8,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 
-import { Tag, ExternalLink } from "~components"
+import { Tag, Tags, ExternalLink, SmallTitle } from "~components"
 
 const StyledDiv = styled.div`
   ${tw`border`}
 `
 
-const ProjectCard = function ({ cover, description, tags, demo, github }) {
+const ProjectCard = function ({
+  cover,
+  description,
+  tags,
+  demo,
+  github,
+  title,
+}) {
   return (
     <StyledDiv>
       <Img className="w-full" fluid={cover.childImageSharp.fluid}></Img>
       <div className="p-4">
+        <SmallTitle>{title}</SmallTitle>
         <p className="mb-4">{description}</p>
         <div>
-          {tags.map((tag, index) => (
-            <Tag key={index}>{tag}</Tag>
-          ))}
+          <Tags data={tags} />
         </div>
 
         <div className="mt-4 pt-2 border-t text-xl">

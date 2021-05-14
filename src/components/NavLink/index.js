@@ -7,10 +7,12 @@ const StyledNavLink = styled.li`
   ${tw`font-primary`}
 `
 
-const NavLink = function ({ to, children }) {
+const NavLink = function ({ to, children, ...props }) {
   return (
     <StyledNavLink>
-      <Link to={to}>{children}</Link>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
     </StyledNavLink>
   )
 }

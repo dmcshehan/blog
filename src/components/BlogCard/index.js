@@ -26,10 +26,10 @@ const ExperienceCard = function ({
   cover,
   excerpt,
   timeToRead,
-  slug,
+  path,
 }) {
   return (
-    <Link to={slug}>
+    <Link to={`/${path}`}>
       <Wrapper>
         <SumDate>
           {moment(date).format("D")}

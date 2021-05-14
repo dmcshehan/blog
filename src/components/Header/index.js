@@ -13,7 +13,7 @@ const Header = function () {
   return (
     <StyledHeader>
       <Container>
-        <Navigation></Navigation>
+        <Navigation />
       </Container>
     </StyledHeader>
   )

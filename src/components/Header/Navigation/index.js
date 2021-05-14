@@ -3,17 +3,19 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 const StyledNav = styled.nav`
-  ${tw`flex justify-between items-center`}
+  ${tw`flex flex-wrap justify-between items-center`}
 `
 
 import Logo from "./Logo/"
 import Navlinks from "./NavLinks/"
+import MobileNavigation from "./MobileNavigation"
 
 const Navigation = function ({ props }) {
   return (
     <StyledNav {...props}>
       <Logo />
-      <Navlinks />
+      <Navlinks className="hidden lg:flex" />
+      <MobileNavigation />
     </StyledNav>
   )
 }

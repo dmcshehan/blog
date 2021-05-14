@@ -18,6 +18,7 @@ export default function index() {
               excerpt
               date
               tags
+              path
               cover {
                 childImageSharp {
                   fluid(maxWidth: 200) {
@@ -27,9 +28,6 @@ export default function index() {
               }
             }
             timeToRead
-            fields {
-              slug
-            }
           }
         }
       }
@@ -39,14 +37,16 @@ export default function index() {
   return (
     <Section>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {allMarkdownRemark.edges.map(({ node }) => (
-          <BlogCard
-            key={node.id}
-            {...node.frontmatter}
-            timeToRead={node.timeToRead}
-            slug={node.fields.slug}
-          />
-        ))}
+        {allMarkdownRemark.edges.map(({ node }) => {
+          console.log(node)
+          return (
+            <BlogCard
+              key={node.id}
+              {...node.frontmatter}
+              timeToRead={node.timeToRead}
+            />
+          )
+        })}
       </div>
     </Section>
   )
