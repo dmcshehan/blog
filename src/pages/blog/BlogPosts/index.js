@@ -16,6 +16,8 @@ export default function index() {
             frontmatter {
               title
               excerpt
+              date
+              tags
               cover {
                 childImageSharp {
                   fluid(maxWidth: 200) {
@@ -23,8 +25,6 @@ export default function index() {
                   }
                 }
               }
-              date
-              tags
             }
             timeToRead
             fields {
@@ -38,7 +38,7 @@ export default function index() {
 
   return (
     <Section>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {allMarkdownRemark.edges.map(({ node }) => (
           <BlogCard
             key={node.id}

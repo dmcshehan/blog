@@ -28,13 +28,13 @@ const ExperienceCard = function ({
   return (
     <div className="mb-8 border-b">
       <div className="grid grid-cols-9 gap-4">
-        <div className="col-span-1">
+        <div className="col-span-9 md:col-span-1">
           <Img
-            className="w-full rounded border"
+            className="w-20 rounded border md:w-full"
             fluid={logo.childImageSharp.fluid}
           ></Img>
         </div>
-        <div className="col-span-8">
+        <div className="col-span-9 md:col-span-8">
           <Program>
             {program} at{" "}
             <ExternalLink href={website} target="_blank">

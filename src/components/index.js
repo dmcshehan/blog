@@ -21,8 +21,11 @@ import EducationCard from "./EducationCard/"
 import BlogCard from "./BlogCard/"
 import BlogHero from "./BlogHero/"
 import Date from "./Date"
-import NavLink from './NavLink'
-import ExternalNavLink from './ExternalNavLink'
+import NavLink from "./NavLink"
+import ExternalNavLink from "./ExternalNavLink"
+import ReadTime from "./ReadTime"
+import TagWrapper from "./Tags/TagWrapper"
+import Tags from "./Tags"
 
 export {
   Button,
@@ -49,5 +52,8 @@ export {
   BlogHero,
   Date,
   NavLink,
-  ExternalNavLink
+  ExternalNavLink,
+  ReadTime,
+  TagWrapper,
+  Tags,
 }

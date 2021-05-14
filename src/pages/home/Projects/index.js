@@ -47,7 +47,7 @@ export default function index() {
             Here are a few design projects I've worked on recently.
           </SectionSubTitle>
         </div>
-        <div className="col-span-3 md:col-span-1 flex items-center justify-center md:justify-end">
+        <div className="col-span-3 md:col-span-1 flex items-center justify-start md:justify-end">
           <Button className="block" to="/about">
             View More Projects
           </Button>

@@ -17,7 +17,7 @@ const Icon = styled.img`
   ${tw`h-16 w-16 block`}
 `
 const IconWrapper = styled.div`
-  ${tw`mb-8 flex justify-center md:justify-start`}
+  ${tw`mb-8`}
 `
 const Title = styled(SectionSubTitle)`
   ${tw`mt-4 mb-4 font-bold`}
@@ -45,14 +45,12 @@ export default function Skills() {
             <Icon src={developer} alt="developer" />
           </IconWrapper>
           <Title>Frontend Developer</Title>
-          <Paragraph className="text-center md:text-left">
+          <Paragraph>
             I like to code things from scratch, and enjoy bringing ideas to life
             in the browser.
           </Paragraph>
           <Title>Languages I speak</Title>
-          <Paragraph className="text-center md:text-left">
-            HTML5, CSS3, SCSS, JavaScript, MongoDB
-          </Paragraph>
+          <Paragraph>HTML5, CSS3, SCSS, JavaScript, MongoDB</Paragraph>
           <Title>Dev Tools</Title>
           <ListContainer className="grid-cols-2 md:grid-cols-3">
             <div>
@@ -75,20 +73,15 @@ export default function Skills() {
             <Icon src={designer} alt="designer" />
           </IconWrapper>
           <Title>Designer (Intermediate)</Title>
-          <Paragraph className="text-center md:text-left">
+          <Paragraph>
             I value simple content structure, clean design patterns, and
             thoughtful interactions.
           </Paragraph>
           <Title>Things I enjoy designing</Title>
-          <Paragraph className="text-center md:text-left">
-            Websites, Web Applications
-          </Paragraph>
+          <Paragraph>Websites, Web Applications</Paragraph>
           <Title>Design Tools</Title>
           <ListContainer>
-            <List
-              list={["Pen & Paper", "Figma", "Photoshop", "Adobe XD"]}
-              className="text-center md:text-left"
-            />
+            <List list={["Pen & Paper", "Figma", "Photoshop", "Adobe XD"]} />
           </ListContainer>
         </Box>
       </BoxContainer>

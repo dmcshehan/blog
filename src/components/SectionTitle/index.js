@@ -4,7 +4,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 const StyledH1 = styled.h1`
-  ${tw`text-3xl lg:text-4xl text-center md:text-left font-bold font-secondary`}
+  ${tw`text-3xl lg:text-4xl font-bold font-secondary`}
 `
 
 export const SectionTitle = function ({ children, ...props }) {

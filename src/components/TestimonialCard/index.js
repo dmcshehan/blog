@@ -18,11 +18,8 @@ const ProjectCard = function ({
   website,
 }) {
   return (
-    <div className="px-2 text-center md:text-left">
-      <Img
-        className="w-20 rounded-full md:rounded mx-auto md:ml-0"
-        fluid={thumbnail.childImageSharp.fluid}
-      />
+    <div className="px-2">
+      <Img className="w-20 rounded" fluid={thumbnail.childImageSharp.fluid} />
       <Paragraph className="mt-2">{testimonial}</Paragraph>
       <NameTitle>{Name}</NameTitle>
       <Paragraph className="mb-8">

@@ -1,4 +1,5 @@
 import React from "react"
+import LineIcon from "react-lineicons"
 
 import { Container, ExternalLink } from "~components"
 
@@ -6,9 +7,9 @@ import social from "./social"
 
 const Footer = function () {
   return (
-    <div className="pb-8 pt-8 border-t">
+    <div className="pb-8 pt-8 border-t bg-black text-white">
       <Container>
-        <div className="grid grid-cols-3 gap-4 text-center md:text-left">
+        <div className="grid grid-cols-3 gap-4 text-center lg:text-left">
           <div className="col-span-3 lg:col-span-2">
             <p>
               <span className="block md:inline">
@@ -34,9 +35,15 @@ const Footer = function () {
           </div>
           <div className="col-span-3 lg:col-span-1">
             <div className="space-x-2 flex justify-center lg:justify-end">
-              {social.map(({ platform, link }) => (
-                <ExternalLink key={platform} href={link}>
-                  {platform}
+              {social.map(({ platform, link, icon }) => (
+                <ExternalLink
+                  className="flex items-center"
+                  key={platform}
+                  href={link}
+                >
+                  <span className="mr-1 text-xl text-white">
+                    <LineIcon name={icon} />
+                  </span>
                 </ExternalLink>
               ))}
             </div>
