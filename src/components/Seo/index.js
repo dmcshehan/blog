@@ -1,69 +1,69 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 const Seo = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            social {
-              twitter
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          site {
+            siteMetadata {
+              title
+              description
+              social {
+                twitter
+              }
             }
           }
         }
-      }
-    `
-  )
-
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
-
-  return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `www.dmcshehan.com`,
-        },
-        {
-          name: `twitter:card`,
-          content: `Who lives in Colombo building useful things.`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
+      `}
+      render={({ site }) => (
+        <Helmet
+          htmlAttributes={{
+            lang,
+          }}
+          title={title}
+          titleTemplate={
+            site.siteMetadata?.title ? `%s | ${site.siteMetadata?.title}` : null
+          }
+          meta={[
+            {
+              name: `description`,
+              content: description || site.siteMetadata.description,
+            },
+            {
+              property: `og:title`,
+              content: title,
+            },
+            {
+              property: `og:description`,
+              content: description || site.siteMetadata.description,
+            },
+            {
+              property: `og:type`,
+              content: `www.dmcshehan.com`,
+            },
+            {
+              name: `twitter:card`,
+              content: `Who lives in Colombo building useful things.`,
+            },
+            {
+              name: `twitter:creator`,
+              content: site.siteMetadata?.social?.twitter || ``,
+            },
+            {
+              name: `twitter:title`,
+              content: title,
+            },
+            {
+              name: `twitter:description`,
+              content: description || site.siteMetadata.description,
+            },
+          ].concat(meta)}
+        />
+      )}
     />
   )
 }

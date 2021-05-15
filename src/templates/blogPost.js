@@ -2,7 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import tw from "twin.macro"
 import { graphql, Link } from "gatsby"
-import LineIcon from "react-lineicons"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons"
 
 import { Layout, Container, BlogHero, SmallTitle } from "~components"
 
@@ -40,7 +45,7 @@ export default function index({ data, pageContext }) {
             {previous !== null ? (
               <Link to={`/${previous.frontmatter.path}`} className="block">
                 <NavContainer>
-                  <LineIcon name="chevron-left" />
+                  <FontAwesomeIcon icon={faChevronLeft} />
                   <span className="ml-2">
                     <DescTitle>Previous Post</DescTitle>
                     <SmallTitle>{previous.frontmatter.title}</SmallTitle>
@@ -60,7 +65,7 @@ export default function index({ data, pageContext }) {
                     <DescTitle>Next Post</DescTitle>
                     <SmallTitle>{next.frontmatter.title}</SmallTitle>
                   </span>
-                  <LineIcon name="chevron-right" />
+                  <FontAwesomeIcon icon={faChevronRight} />
                 </NavContainer>
               </Link>
             ) : null}

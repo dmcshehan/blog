@@ -1,6 +1,4 @@
 import React from "react"
-import LineIcon from "react-lineicons"
-
 import { Container, ExternalLink } from "~components"
 
 import social from "./social"
@@ -41,9 +39,7 @@ const Footer = function () {
                   key={platform}
                   href={link}
                 >
-                  <span className="mr-1 text-xl text-white">
-                    <LineIcon name={icon} />
-                  </span>
+                  <span className="mr-1 text-xl text-white">{icon}</span>
                 </ExternalLink>
               ))}
             </div>

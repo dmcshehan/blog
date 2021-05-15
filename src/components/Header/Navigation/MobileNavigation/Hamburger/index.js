@@ -1,19 +1,20 @@
 import React from "react"
-import LineIcon from "react-lineicons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 export default function Hamburger({ onMenuClick, isMenuOpen, ...props }) {
   return (
     <div {...props}>
       {isMenuOpen ? (
-        <LineIcon
-          name="close"
+        <FontAwesomeIcon
+          icon={faTimes}
           onClick={() => {
             onMenuClick()
           }}
         />
       ) : (
-        <LineIcon
-          name="menu"
+        <FontAwesomeIcon
+          icon={faBars}
           onClick={() => {
             onMenuClick()
           }}

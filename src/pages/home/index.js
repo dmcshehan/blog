@@ -6,7 +6,7 @@ import Skills from "./Skills"
 import Projects from "./Projects"
 import Testimonials from "./Testimonials"
 
-export default function () {
+export default function HomePage() {
   return (
     <Layout>
       <Seo title="Home" />
