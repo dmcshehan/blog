@@ -4,7 +4,7 @@ import { Layout, Seo } from "~components"
 import Hero from "./Hero/"
 import BlogPosts from "./BlogPosts/"
 
-export default function () {
+export default function BlogPage() {
   return (
     <Layout>
       <Seo title="Blog" />

@@ -4,7 +4,9 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-import LineIcon from "react-lineicons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLaptop } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 import { Tags, ExternalLink, SmallTitle } from "~components"
 
@@ -32,10 +34,10 @@ const ProjectCard = function ({
 
         <div className="mt-4 pt-2 border-t text-xl">
           <ExternalLink href={demo} className="mr-4">
-            <LineIcon name="search" />
+            <FontAwesomeIcon icon={faLaptop} />
           </ExternalLink>
           <ExternalLink href={github} secondary>
-            <LineIcon name="github-original" />
+            <FontAwesomeIcon icon={faGithub} />
           </ExternalLink>
         </div>
       </div>
