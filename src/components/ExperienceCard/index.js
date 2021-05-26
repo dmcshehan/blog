@@ -3,18 +3,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 import Img from "gatsby-image"
 
-import { SectionSubTitle, Paragraph, ExternalLink } from "~components"
-
-const Position = styled(SectionSubTitle)`
-  ${tw`font-bold`}
-`
-
-const Duration = styled.p`
-  ${tw`font-light text-lg italic`}
-`
-const Description = styled(Paragraph)`
-  ${tw`mt-2`}
-`
+import { SmallTitle, Paragraph, ExternalLink } from "~components"
 
 const ExperienceCard = function ({
   position,
@@ -27,24 +16,24 @@ const ExperienceCard = function ({
 }) {
   return (
     <div className="mb-8 border-b">
-      <div className="grid grid-cols-9 gap-4">
-        <div className="col-span-9 md:col-span-1">
+      <div className="grid grid-cols-12 gap-4">
+        <div className="col-span-11 md:col-span-1">
           <Img
-            className="rounded border w-20 md:w-full"
+            className="rounded border w-10"
             fluid={logo.childImageSharp.fluid}
           ></Img>
         </div>
-        <div className="col-span-9 md:col-span-8">
-          <Position>
+        <div className="col-span-12 md:col-span-11">
+          <SmallTitle>
             {position} at{" "}
             <ExternalLink href={website} target="_blank">
               {company}
             </ExternalLink>
-          </Position>
-          <Duration>
+          </SmallTitle>
+          <Paragraph>
             {start} - {end}
-          </Duration>
-          <Description>{description}</Description>
+          </Paragraph>
+          <Paragraph>{description}</Paragraph>
         </div>
       </div>
     </div>

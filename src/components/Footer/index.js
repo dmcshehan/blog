@@ -5,7 +5,7 @@ import social from "./social"
 
 const Footer = function () {
   return (
-    <div className="pb-8 pt-8 border-t bg-black text-white">
+    <div className="pb-8 pt-8 border-t bg-gray-200">
       <Container>
         <div className="grid grid-cols-3 gap-4 text-center lg:text-left">
           <div className="col-span-3 lg:col-span-2">
@@ -39,7 +39,7 @@ const Footer = function () {
                   key={platform}
                   href={link}
                 >
-                  <span className="mr-1 text-xl text-white">{icon}</span>
+                  <span className="mr-1 text-xl text-gray-700">{icon}</span>
                 </ExternalLink>
               ))}
             </div>

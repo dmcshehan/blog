@@ -50,10 +50,6 @@ const Education = function () {
   return (
     <Section>
       <SectionTitle>Education</SectionTitle>
-      <SectionSubTitle>
-        The Degrees and certifications programs that I have done
-      </SectionSubTitle>
-
       <Wrapper>
         {allMarkdownRemark.edges.map(({ node }) => (
           <EducationCard key={node.id} {...node.frontmatter} />
