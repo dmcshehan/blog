@@ -42,7 +42,7 @@ const HomeHero = function index() {
             CopernicusMD.
           </P>
           <P className="mb-4">
-            When I'm not coding, I'm likely waticling 📺 something on Netflix /
+            When I'm not coding, I'm likely watiching 📺 something on Netflix /
             YouTube or travel. You can find me on{" "}
             <ExtLink href="https://github.com/dmcshehan" target="_blank">
               GitHub
