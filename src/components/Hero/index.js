@@ -5,7 +5,7 @@ import tw from "twin.macro"
 import { Container } from "~components"
 
 const StyledDiv = styled.div`
-  ${tw`pt-16 pb-16 bg-gray-50`}
+  ${tw`pt-16 pb-16 bg-fill`}
 `
 
 export default function Hero({ children }) {

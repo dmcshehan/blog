@@ -19,8 +19,8 @@ export default function Intro() {
 
   return (
     <Section>
-      <div className="grid grid-cols-7 gap-4 flex flex-col">
-        <div className="col-span-7 order-2 lg:col-span-4 lg:order-1">
+      <div className="grid grid-cols-12 gap-4 flex flex-col">
+        <div className="col-span-12 order-2 lg:col-span-8 lg:order-1">
           <Paragraph>
             My name is Shehan Disanayake. I'm a 26 year old Front End Developer
             based in Colombo, Sri Lanka 🏝️. I describe myself as a passionate
@@ -42,7 +42,7 @@ export default function Intro() {
             both business and consumer use. I love programming and traveling.
           </Paragraph>
         </div>
-        <div className="col-span-7 order-1 lg:order-2 lg:col-span-3">
+        <div className="col-span-12 order-1 lg:order-2 lg:col-span-4">
           <Img className="rounded" fluid={data.file.childImageSharp.fluid} />
         </div>
       </div>

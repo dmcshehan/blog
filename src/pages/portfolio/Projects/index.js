@@ -33,7 +33,7 @@ export default function index() {
   `)
 
   return (
-    <Section className="bg-gray-100">
+    <Section>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
         {allMarkdownRemark.edges.map(({ node }) => (
           <ProjectCard key={node.id} {...node.frontmatter} />

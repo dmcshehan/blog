@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptop } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
-import { Tags, ExternalLink, SmallTitle } from "~components"
+import { Tags, ExternalLink, SmallTitle, Paragraph } from "~components"
 
 const StyledDiv = styled.div`
   ${tw`border`}
@@ -27,12 +27,12 @@ const ProjectCard = function ({
       <Img className="w-full" fluid={cover.childImageSharp.fluid}></Img>
       <div className="p-4">
         <SmallTitle>{title}</SmallTitle>
-        <p className="mb-4">{description}</p>
+        <Paragraph>{description}</Paragraph>
         <div>
           <Tags data={tags} />
         </div>
 
-        <div className="mt-4 pt-2 border-t text-xl">
+        <div className="mt-4 pt-2 border-t">
           <ExternalLink href={demo} className="mr-4">
             <FontAwesomeIcon icon={faLaptop} />
           </ExternalLink>

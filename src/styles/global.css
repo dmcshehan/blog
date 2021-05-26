@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
 * {
   box-sizing: border-box;
 }

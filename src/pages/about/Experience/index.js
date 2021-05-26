@@ -49,8 +49,6 @@ const Experience = function () {
   return (
     <Section className="bg-gray-50">
       <SectionTitle>Work Experience</SectionTitle>
-      <SectionSubTitle>Companies That I have worked so far</SectionSubTitle>
-
       <Wrapper>
         {allMarkdownRemark.edges.map(({ node }) => (
           <ExperienceCard key={node.id} {...node.frontmatter} />

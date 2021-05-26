@@ -59,9 +59,6 @@ const Testimonials = function () {
   return (
     <Section>
       <SectionTitle>Testimonials</SectionTitle>
-      <SectionSubTitle>
-        People I've worked with have said some nice things
-      </SectionSubTitle>
       <Slider {...settings} className="mt-16">
         {allMarkdownRemark.edges.map(({ node }) => (
           <TestimonialCard key={node.id} {...node.frontmatter} />

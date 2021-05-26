@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: ["Hind", "sans-serif"],
+      secondary: ["Sofia Pro", "sans-serif"],
     },
     extend: {
       colors: {
@@ -13,6 +14,9 @@ module.exports = {
         },
         secondary: {
           DEFAULT: "#000000",
+        },
+        fill: {
+          DEFAULT: "#f7fafc",
         },
       },
       minHeight: {
