@@ -4,10 +4,6 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import tw from "twin.macro"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLaptop } from "@fortawesome/free-solid-svg-icons"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-
 import { Tags, ExternalLink, SmallTitle, Paragraph } from "~components"
 
 const StyledDiv = styled.div`
@@ -25,21 +21,20 @@ const ProjectCard = function ({
   return (
     <StyledDiv>
       <Img className="w-full" fluid={cover.childImageSharp.fluid}></Img>
-      <div className="p-4">
+      <div className="py-2 px-2">
         <SmallTitle>{title}</SmallTitle>
         <Paragraph>{description}</Paragraph>
         <div>
           <Tags data={tags} />
         </div>
-
-        <div className="mt-4 pt-2 border-t">
-          <ExternalLink href={demo} className="mr-4">
-            <FontAwesomeIcon icon={faLaptop} />
-          </ExternalLink>
-          <ExternalLink href={github} secondary>
-            <FontAwesomeIcon icon={faGithub} />
-          </ExternalLink>
-        </div>
+      </div>
+      <div className="p-2 border-t">
+        <ExternalLink href={demo} className="mr-4">
+          Demo
+        </ExternalLink>
+        <ExternalLink href={github} secondary>
+          Github
+        </ExternalLink>
       </div>
     </StyledDiv>
   )
