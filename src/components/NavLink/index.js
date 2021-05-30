@@ -4,7 +4,7 @@ import tw from "twin.macro"
 import { Link } from "gatsby"
 
 const StyledNavLink = styled.li`
-  ${tw`font-primary`}
+  ${tw`font-secondary font-bold`}
 `
 
 const NavLink = function ({ to, children, ...props }) {
