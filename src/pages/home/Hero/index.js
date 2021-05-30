@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styled from "styled-components"
-import tw from "twin.macro"
+
+import resume from "../../../data/Shehan_s_Resume.pdf"
 
 import {
   PageTitle,
@@ -58,9 +58,15 @@ const HomeHero = function index() {
             </ExternalLink>
             .
           </Paragraph>
-          <Button className="mt-8 block" to="/about">
-            More About Me
-          </Button>
+          <div className="flex">
+            <Button className="mt-8 block mr-4" to="/about">
+              More About Me
+            </Button>
+
+            <Button className="mt-8 block" download href={resume}>
+              Download Resume
+            </Button>
+          </div>
         </div>
         <div className="flex order-1 lg:order-2">
           <Img

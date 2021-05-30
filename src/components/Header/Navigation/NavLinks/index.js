@@ -5,7 +5,7 @@ import tw from "twin.macro"
 import links from "../links"
 
 export const StyledNavLinks = styled.ul`
-  ${tw`list-none space-x-4`}
+  ${tw`list-none space-x-4 font-secondary`}
 `
 
 import { NavLink, ExternalNavLink } from "~components"
@@ -18,7 +18,10 @@ const NavLinks = function (props) {
           {nav.title}
         </NavLink>
       ))}
-      <ExternalNavLink href={`mailto:dmcshehan@outlook.com`}>
+      <ExternalNavLink
+        className="font-bold font-secondary"
+        href={`mailto:dmcshehan@outlook.com`}
+      >
         Contact
       </ExternalNavLink>
     </StyledNavLinks>
